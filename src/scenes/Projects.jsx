@@ -21,9 +21,9 @@ const projectVariant = {
 const Description = ({ title }) => {
 
       switch(title){
-      case "Project 1": return "A React dashboard app built using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid "
-      case "Project 2": return "A Typescript React Fitness website built using React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll. Deployed on Cloudflare"
-      case "Project 3": return "Full stack MERN Dashboard using Material UI, Material UI Data Grid, Nivo Charts, Redux Toolkit and Redux Toolkit Query. Backend using Node JS, Express Js, Mongoose, and MongoDB"
+      case "Project 1": return "A React dashboard app built using Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid"
+      case "Project 2": return "A React Fitness website built using Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll"
+      case "Project 3": return "MERN Dashboard using Material UI, Material UI Data Grid, Nivo Charts, Redux Toolkit. Backend using Express Js, and MongoDB"
       case "Project 4": return "Minimalist web scraper for stock data across 30+ websites using Node JS, Express Js and Puppeteer";
       default: return "not found"
     }
