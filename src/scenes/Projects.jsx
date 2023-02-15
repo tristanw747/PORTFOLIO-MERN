@@ -20,15 +20,15 @@ const projectVariant = {
 
 const Description = ({ title }) => {
 
-      switch(title){
-      case "Project 1": return "A React dashboard app built using Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid"
-      case "Project 2": return "A React Fitness website built using Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll"
-      case "Project 3": return "MERN Dashboard using Material UI, Material UI Data Grid, Nivo Charts, Redux Toolkit. Backend using Express Js, and MongoDB"
-      case "Project 4": return "Minimalist web scraper for stock data across 30+ websites using Node JS, Express Js and Puppeteer";
-      default: return "not found"
-    }
+  switch (title) {
+    case "Project 1": return <a href="https://replitfront.onrender.com/">MERN Dashboard using Material UI, Material UI Data Grid, Nivo Charts, Redux Toolkit. Backend using Express Js, and MongoDB</a>
+    case "Project 2": return <a href="https://4448b24d.mern-fitness-ts.pages.dev/">A React Fitness website built using Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, React Anchor Link Smooth Scroll</a>
+    case "Project 3": return <a href="https://github.com/tristanw747/REACT-Dasboard">A React dashboard app built using Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid</a>
+    case "Project 4": return <a href="https://stock-news-scraper-multi.tristanw747.repl.co/">Minimalist web scraper for stock data across 30+ websites using Node JS, Express Js and Puppeteer</a>
+    default: return "not found"
+  }
 
-  
+
 }
 
 
@@ -44,7 +44,7 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-        <Description title={ title }/>
+          <Description title={title} />
         </p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -75,9 +75,11 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
+
         <p className="mt-10 mb-10">
           Here are a few sample projects, demonstrating front and back end development
         </p>
+
       </motion.div>
 
       {/* PROJECTS */}
@@ -90,9 +92,9 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-
-          <Project title="Project 1" />
-
+         
+            <Project title="Project 1" />
+         
           <Project title="Project 2" />
 
 

@@ -17,6 +17,7 @@ const Contact = () => {
     }
   };
 
+
   return (
     <section id="contact" className="contact py-48">
       {/* HEADINGS */}
@@ -68,10 +69,10 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form
+          <form 
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/yuanw1122@gmail.com"
+            action="mailto:tristanw747@gmail.com?subject=🤘 Hi Tristan, I'd like to hire you"
             method="POST"
           >
             <input
@@ -125,7 +126,7 @@ const Contact = () => {
                   "Max length is 2000 char."}
               </p>
             )}
-
+          {/* <form action="mailto:tristanw747@gmail.com?subject=🤘 Hi Tristan, I'd like to hire you"> */}
             <button
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
